@@ -84,9 +84,7 @@ function createGallery(images) {
 
 gallery.insertAdjacentHTML('afterbegin', createGallery(images));
 
-const lightbox = new SimpleLightbox('.gallery a', {
+var lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionDelay: 250,
 });
-
-
