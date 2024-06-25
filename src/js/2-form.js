@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
 
 form.addEventListener('input', function (event) {
     if (event.target.name === 'email' || event.target.name === 'message') {
-        formData[event.target.name] = event.target.value;
+        formData[event.target.name] = event.target.value.trim();
         localStorage.setItem(localStorageKey, JSON.stringify(formData));
     };
 });
